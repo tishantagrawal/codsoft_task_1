@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/936d7d915d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/TISHANT (1).png" class="logo"  />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER</p>
+          <h1>Hi, I'm <span>Tishant</span> Agrawal</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about--------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/Untitled design (1).png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hi, I'm Tishant Agrawal. I am a tech lover from my childhood. I
+              love to explore new technologies so i started my computer science
+              career by doing MERN stack course. I am ready to adopt new changes
+              in IT industry and very passionate about learning new things. I am
+              looking forward for someone who can give me chance to showcase my
+              skills.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links">Experience</p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />GOOD KNOWLEDGE OF HTML TAGS</li>
+                <li><span>CSS</span><br />PROFICIENT WITH CSS PROPERTIES</li>
+                <li><span>JAVASCRIPT</span><br />BASIC AND ADVANCE JS (ES6)</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023-26</span><br />BACHELOR OF COMPUTER APPLICATION
+                  (BCA)
+                </li>
+                <li>
+                  <span>2022-23</span><br />RBSE SENIOR SECONDARY EXAM OF 12
+                  <sup>th</sup>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---services-------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectenctio totam, culpa vel.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectenctio totam, culpa vel.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet consectenctio totam, culpa vel.</p>
+            <a href="#">Learn more</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ------portfolio-- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work-1.png" alt="">
+            <div class="layer">
+              <h3>Social media app</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vero animi numquam odio consequuntur sint ducimus ipsum laboriosam dolorum alias.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-2.png" alt="">
+            <div class="layer">
+              <h3>Music  app</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vero animi numquam odio consequuntur sint ducimus ipsum laboriosam dolorum alias.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-3.png" alt="">
+            <div class="layer">
+              <h3>Ecommerce app</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vero animi numquam odio consequuntur sint ducimus ipsum laboriosam dolorum alias.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+      
+    </div>
+
+    <!-- --------contact-------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p> <i class="fa-solid fa-envelope"></i> agrawaltishant@gmail.com </p>
+            <p > <i class="fa-solid fa-phone"></i>+91 7425895292</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            </div>
+            <a href="images/My resume.pdf" download class="btn btn2"> Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="text" name="email" placeholder="Your Email" required>
+              <textarea name="message"  rows="5" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> 2023. Made With <i class="fa-solid fa-heart"></i> by Tishant Agrawal</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu")
+
+      function openmenu(){
+        sidemenu.style.right = "0"
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px"
+      }
+    </script>
+  </body>
+</html>
